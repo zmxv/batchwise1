@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #3D5B81;
+  --secondary-color: #9BC0D9;
+  --tertiary-color: #DFFBFC;
+  --quaternary-color: #f9db66;
+  --quinary-color: #293241;
+
+  --progress-fg-color: #3D5B81;
+  --progress-bg-color: #DFFBFC;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 8px 16px 8px 12px;
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  height: 36px;
+  width: 144px;
+}
+
+footer {
+  padding: 16px;
+  background: var(--quinary-color);
+  color: #fff;
+}
+
+section {
+  padding: 8px 16px;
+}
+
+.stretch {
+  flex-grow: 1;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
+
+.instruction {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.prompt-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  min-width: 90px;
+  background: #fff;
+  font-size: 14px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--tertiary-color);
+}
+
+.btn:active {
+  background: var(--quaternary-color);
+}
+
+.prompt {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  line-height: 1.75;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  resize: none;
+  background: var(--tertiary-color);
+  outline-color: var(--primary-color);
+}
+
+.pending {
+  background: var(--progress-bg-color);
+}
+
+.error {
+  background: #f64756 !important;
+}
+
+.ag-ltr .ag-cell, .ag-rtl .ag-cell {
+  border-right: var(--ag-row-border-style) var(--ag-row-border-color) var(--ag-row-border-width);
+}
+
