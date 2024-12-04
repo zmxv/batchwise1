@@ -9,6 +9,10 @@ Batchwise is a no-code data processing web application that leverages Chrome's b
 
 ## Demo
 
+
+<video src="https://github.com/user-attachments/assets/ab1ffc0f-7804-4643-a9f8-ea24d04e37a8" width="512" />
+
+
 Try it at: [https://batchwise.pages.dev](https://batchwise.pages.dev)
 
 Prerequisites:
